@@ -18,7 +18,7 @@ A seguir estão os procedimentos para montar a infraestrutura nos sistemas opera
 * Executar o VisualG clicando duas vezes sobre o arquivo visualg2.0.exe
 * A figura abaixo é a tela inicial do VisualG no Windows.
 
-![](imagens/visualg2.0-telainicial.png)
+![](referencias/visualg2.0-telainicial.png)
 
 ### Sistema Operacional Linux
 
