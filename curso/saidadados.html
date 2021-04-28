@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Eros Vitor Bornatowski">
+
+  <title>CTS Educare - Curso Lógica de Programação</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/boxs.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Conteúdo</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">Introdução</a>
+        <a href="variaveistiposdados.html" class="list-group-item list-group-item-action bg-light">Variáveis e Tipos de dados</a>
+        <a href="operadoresexpressoes.html" class="list-group-item list-group-item-action bg-light">Operadores e Expressões</a>
+        <a href="saidadados.html" class="list-group-item list-group-item-action bg-light">Saída de dados</a>
+        <a href="entradadados.html" class="list-group-item list-group-item-action bg-light">Entrada de dados</a>
+        <a href="estruturasdecisao.html" class="list-group-item list-group-item-action bg-light">Estruturas de decisão</a>
+        <a href="estruturasrepeticao.html" class="list-group-item list-group-item-action bg-light">Estruturas de repetição</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Lógica de Programação</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recursos
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="exerciciossolucao.html">Solução Exercícios</a>
+                <a class="dropdown-item" href="infraestrutura.html">Infraestrutura</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Saída de dados</h1>
+        <p>
+A saída de dados é a operação que consiste em mostrar dados ao usuário. O pseudocódigo disponibiliza os seguintes comandos para saída de dados:
+        </p>
+        <ul>
+          <li>escreva</li>
+          <li>escreval</li>
+        </ul>
+
+        <h2>Comando escreva</h2>
+        <p>
+O comando <b>escreva</b> exibe um determinado dado ou informação e <b>não avança</b> para a próxima linha. Pode ser utilizado para mostrar caracteres, textos, números inteiros e números com casas decimais.
+        </p>
+        <p>
+Exemplo de utilização do comando <b>escreva</b>:
+        </p>
+<pre class="box box-sample">
+algoritmo "ExemploComandoEscreva"
+inicio
+  escreva("Observe que ")
+  escreva("tudo será ")
+  escreva("mostrado na mesma linha ")
+  escreva("inclusive este número ", 1993) 
+fimalgoritmo
+</pre>
+
+        <h2>Comando escreval</h2>
+        <p>
+O comando <b>escreval</b> exibe um determinado dado ou informação e <b>avança</b> para a próxima linha. Pode ser utilizado para mostrar caracteres, textos, números inteiros e números com casas decimais.
+        </p>
+        <p>
+Exemplo de utilização do comando <b>escreval</b>:
+        </p>
+<pre class="box box-sample">
+algoritmo "ExemploComandoEscreval"
+var
+  PI: real
+inicio
+  escreval("Comandos Saida de Dados")
+
+  PI &lt;- 3.14159265f
+  escreval(PI)
+
+  escreval("O valor da constante PI é ", PI)
+
+  escreval("Valor PI: ", PI:1:4)
+fimalgoritmo
+</pre>
+
+        <h2>Exercícios</h2>
+        <h4>Exercício 01 - Dados do Curso</h4>
+        <p>
+Escreva um programa que mostre na tela os dados do curso. Os dados que devem ser exibidos pelo programa são os seguintes: Nome Curso, Duração, Período e Aluno. Cada informação deve ser mostrada uma abaixo da outra.
+        </p>
+
+        <h4>Exercício 02 - Resultado Expressão Aritmética</h4>
+        <p>
+Escreva um programa que mostre na tela o resultado que será armazenado na variável x pela expressão aritmética x = 1000 * (1,5 / 100) * 6.
+        </p>
+      </div>   
+    </div>
+  </div>
+
+  <div id="footer" class="bg-primary text-white mt-2 py-2 text-center">
+    &copy; CTS Educare&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://br.linkedin.com/in/erosvitor" target="_blank">Eros Vitor Bornatowski</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;erosborna@gmail.com
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

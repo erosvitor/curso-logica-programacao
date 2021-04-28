@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Eros Vitor Bornatowski">
+
+  <title>CTS Educare - Curso Lógica de Programação</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/boxs.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Conteúdo</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">Introdução</a>
+        <a href="variaveistiposdados.html" class="list-group-item list-group-item-action bg-light">Variáveis e Tipos de dados</a>
+        <a href="operadoresexpressoes.html" class="list-group-item list-group-item-action bg-light">Operadores e Expressões</a>
+        <a href="saidadados.html" class="list-group-item list-group-item-action bg-light">Saída de dados</a>
+        <a href="entradadados.html" class="list-group-item list-group-item-action bg-light">Entrada de dados</a>
+        <a href="estruturasdecisao.html" class="list-group-item list-group-item-action bg-light">Estruturas de decisão</a>
+        <a href="estruturasrepeticao.html" class="list-group-item list-group-item-action bg-light">Estruturas de repetição</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Lógica de Programação</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recursos
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="exerciciossolucao.html">Solução Exercícios</a>
+                <a class="dropdown-item" href="infraestrutura.html">Infraestrutura</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Wine</h1>
+        <p>
+O Wine (Wine Is Not an Emulator) é uma camada capaz de executar aplicações Microsoft Windows em sistemas operacionais padrão POSIX, tais como Linux, macOS e BSD.
+        </p>
+        <div class="alert alert-warning" role="alert">
+<b>Atenção!</b> Devido a grande quantidade de sistemas operacionais e a enorme variedade de distribuições Linux, os procedimentos para instalar e desinstalar o Wine são para as distribuições Linux que utilizam o <strong>apt-get</strong> como ferramenta para administração de pacotes.
+        </div>
+
+        <h2>Instalando o Wine</h2>
+        <p>
+Para instalar o Wine, abrir um Terminal e seguir os passos abaixo.
+        </p>
+        <span class="step">Passo 1</span>
+        <p>
+Executar o comando abaixo se a arquitetura do seu Linux é 64 bits (<b>apenas se for 64 bits</b>):
+        </p>
+<pre class="box-linux-command">
+sudo dpkg --add-architecture i386
+</pre>
+
+        <span class="step">Passo 2</span>
+        <p>
+Adicionar a chave para acessar o repositório do Wine:
+        </p>
+<pre class="box-linux-command">
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+</pre>
+
+        <span class="step">Passo 3</span>
+        <p>
+Adicionar o repositório geral do Wine
+        </p>
+<pre class="box-linux-command">
+sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+</pre>
+
+        <span class="step">Passo 4</span>
+        <p>
+Executar o comando abaixo <b>APENAS</b> se o seu Linux for o Linux Mint for 17.x:
+        </p>
+<pre class="box-linux-command">
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ trusty main'
+</pre>
+        <p>
+Executar o comando abaixo <b>APENAS</b> se o seu Linux for o Linux Mint for 18.x:
+        </p>
+<pre class="box-linux-command">
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'
+</pre>
+
+        <span class="step">Passo 5</span>
+        <p>
+Atualizar o banco de dados do comando apt para que o repositório do Wine seja reconhecido:
+        </p>
+<pre class="box-linux-command">
+sudo apt-get update
+</pre>
+
+        <span class="step">Passo 6</span>
+        <p>
+Instalar o Wine:
+        </p>
+<pre class="box-linux-command">
+sudo apt-get install --install-recommends winehq-stable
+</pre>
+
+        <span class="step">Passo 7</span>
+        <p>
+Executar o comando abaixo para confirmar a instalação do Wine:
+        </p>
+<pre class="box-linux-command">
+wine --version
+</pre>
+
+        <h2>Desinstalando o Wine</h2>
+        <p>
+Para desinstalar o Wine, abrir um Terminal e seguir os passos abaixo.
+        </p>
+
+        <span class="step">Passo 1</span>
+        <p>
+Remover os arquivos do Wine
+        </p>
+<pre class="box-linux-command">
+sudo apt remove wine
+sudo apt-get autoremove
+</pre>
+
+        <span class="step">Passo 2</span>
+        <p>
+Remover as configurações do Wine que estão no diretório home
+        </p>
+<pre class="box-linux-command">
+rm -rf ~/.wine
+</pre>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="bg-primary text-white mt-2 py-2 text-center">
+    &copy; CTS Educare&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://br.linkedin.com/in/erosvitor" target="_blank">Eros Vitor Bornatowski</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;erosborna@gmail.com
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Eros Vitor Bornatowski">
+
+  <title>CTS Educare - Curso Lógica de Programação</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <style>
+    .answer-true-false {
+      color: blue;
+    }
+    .answer-true-false:before {
+      content: "\00a0\00a0";
+    }
+    .answer-true-false:after {
+      content: "\00a0\00a0";
+    }
+    .answer-phrase {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Conteúdo</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">Introdução</a>
+        <a href="variaveistiposdados.html" class="list-group-item list-group-item-action bg-light">Variáveis e Tipos de dados</a>
+        <a href="operadoresexpressoes.html" class="list-group-item list-group-item-action bg-light">Operadores e Expressões</a>
+        <a href="saidadados.html" class="list-group-item list-group-item-action bg-light">Saída de dados</a>
+        <a href="entradadados.html" class="list-group-item list-group-item-action bg-light">Entrada de dados</a>
+        <a href="estruturasdecisao.html" class="list-group-item list-group-item-action bg-light">Estruturas de decisão</a>
+        <a href="estruturasrepeticao.html" class="list-group-item list-group-item-action bg-light">Estruturas de repetição</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Lógica de Programação</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recursos
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="exerciciossolucao.html">Solução Exercícios</a>
+                <a class="dropdown-item" href="infraestrutura.html">Infraestrutura</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Solução dos exercícios</h1>
+
+        <h2>Variáveis e Tipos de dados</h2>
+        <h4>Exercício 01</h4>
+        <p>
+Sobre variáveis e tipos de dados no pseudocódigo, marque com V as sentenças verdadeiras e com F as sentenças falsas.
+        </p>
+        <ul class="list-unstyled">
+          <li>(<span class="answer-true-false">V</span>) Um identificador de variável pode começar pelo caractere $</li> 
+          <li>(<span class="answer-true-false">V</span>) É possível misturar letras e números após o primeiro caractere válido</li>
+          <li>(<span class="answer-true-false">V</span>) O caractere underline pode ser utilizado para iniciar um nome de variável</li>
+          <li>(<span class="answer-true-false">V</span>) O pseudocódigo não faz diferença entre letras maiúsculas e letras minúsculas</li>
+          <li>(<span class="answer-true-false">F</span>) É possível utilizar espaço em branco para separar um identificador composto</li>
+        </ul>
+ 
+        <h4>Exercício 02</h4>
+        <p>
+Marque com V os identificadores válidos e com I os identificadores inválidos.
+        </p>
+        <div class="container" style="padding-left: 0px">
+          <div class="row">
+            <div class="col-sm">
+              <ul class="list-unstyled">
+                <li>(<span class="answer-true-false">V</span>) abc</li>
+                <li>(<span class="answer-true-false">F</span>) 123a</li>
+                <li>(<span class="answer-true-false">V</span>) _</li>
+                <li>(<span class="answer-true-false">V</span>) Al23</li>
+                <li>(<span class="answer-true-false">V</span>) $var</li>
+                <li>(<span class="answer-true-false">F</span>) AB.DE</li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <ul class="list-unstyled">
+                <li>(<span class="answer-true-false">F</span>) 3abc</li>
+                <li>(<span class="answer-true-false">F</span>) a?B</li>
+                <li>(<span class="answer-true-false">V</span>) A_a</li>
+                <li>(<span class="answer-true-false">V</span>) _1</li>
+                <li>(<span class="answer-true-false">V</span>) _$</li>
+                <li>(<span class="answer-true-false">F</span>) etc...</li>
+              </ul>
+            </div>
+            <div class="col-sm">
+             <ul class="list-unstyled">
+                <li>(<span class="answer-true-false">V</span>) a</li>
+                <li>(<span class="answer-true-false">V</span>) acdl</li>
+                <li>(<span class="answer-true-false">F</span>) 1</li>
+                <li>(<span class="answer-true-false">V</span>) A_$_</li>
+                <li>(<span class="answer-true-false">V</span>) b3l2</li>
+                <li>(<span class="answer-true-false">F</span>) guarda-chuva</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h4>Exercício 03</h4>
+        <p>
+Com suas palavras, descreva o que é uma variável?
+        </p>
+        <p class="answer-phrase">
+Resposta: Espaço na memória do computador para armazenar dados.
+        </p>
+
+        <h4>Exercício 04</h4>
+        <p>
+Quais os tipos de dados existentes no pseudocódigo?
+        </p>
+        <p class="answer-phrase">
+Resposta: caractere, inteiro, real, logico.
+        </p>
+
+
+        <h2>Operadores e Expressões</h2>
+        <h4>Exercício 01</h4>
+        <p>
+Qual o valor atribuído a variável 'c'?
+        </p>
+<pre class="box box-exercise ">
+var
+  a,b,c: inteiro
+inicio
+  a &lt;- 20
+  b &lt;- 10
+  c &lt;- (a - b) * (a)
+fimalgoritmo
+</pre>
+        <p class="answer-phrase">
+Resposta: 200 
+        </p>
+
+        <h4>Exercício 02</h4>
+        <p>
+No fragmento de código abaixo, qual o resultado da expressão aritmética?
+        </p>
+<pre class="box box-exercise ">
+var
+  i,j,k: inteiro
+inicio
+  i &lt;- 15
+  j &lt;- 3
+  k &lt;- i * j + (i / 3)
+fimalgoritmo
+</pre>
+        <p class="answer-phrase">
+Resposta: 50
+        </p>
+
+
+        <h2>Saida de dados</h2> 
+        <h4>Exercício 01 - Dados do Curso</h4>
+        <p>
+Escreva um programa que mostre na tela os dados do curso. Os dados que devem ser exibidos pelo programa são os seguintes: Nome Curso, Duração, Período e Aluno. Cada informação deve ser mostrada uma abaixo da outra.
+        </p>
+<pre>
+algoritmo "DadosDoCurso"
+var
+
+inicio
+  escreval("Dados do Curso")
+  escreval("")
+    
+  escreval("Nome Curso: Lógica de Programação")
+  escreval("Duração: 15 horas")
+  escreval("Período: Noite")
+  escreval("Aluno: Eros Vitor Bornatowski")
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 02 - Resultado Expressão Aritmética</h4>
+        <p>
+Escreva um programa que mostre na tela o resultado que será armazenado na variável x pela expressão aritmética x = 1000 * (1,5 / 100) * 6.
+        </p>
+<pre>
+algoritmo "ResultadoExpressaoAritmetica"
+var
+  x: real
+inicio
+  escreval("Resultado da expressão aritmética 'x = 1000 * (1.5 / 100) * 6'")
+  escreval("")
+    
+  x &lt;- 1000 * (1.5 / 100) * 6
+  escreval(x)
+fimalgoritmo
+</pre>
+
+
+        <h2>Entrada de dados</h2> 
+        <h4>Exercício 01 - Calcular Área Triângulo</h4>
+        <p>
+Escreva um programa para calcular a área de um triângulo. O programa deve solicitar ao usuário a base e a altura do triângulo. Deve calcular a área e depois mostrar o resultado na tela. A fórmula para calcular a área de um triângulo é <b>A = (base x altura) / 2</b>.
+        </p>
+<pre>
+algoritmo "CalculoAreaTriangulo"
+var
+  base, altura: inteiro
+  area: real
+inicio
+  escreval("Cálculo da área de um triângulo")
+  escreval("")
+     
+  escreva("Digite a base do triângulo: ")
+  leia(base)
+
+  escreva("Digite a altura do triângulo: ")
+  leia(altura)
+
+  area &lt;- (base * altura) / 2
+  escreval("A área do triângulo é", area)
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 02 - Converter Real para Dolar</h4>
+        <p>
+Escreva um programa para converter a moeda Real para a moeda Dolar. O programa deve solicitar ao usuário um valor em reais e depois mostrar na tela o valor em dólares. Assumir como cotação do dolar o valor de 3,35.
+        </p>
+<pre>
+algoritmo "ConverterRealParaDolar"
+var
+  cotacaoDolar: real
+  reais: inteiro
+  dolares: real
+inicio
+  escreval("Converter reais para dólares")
+  escreval("")
+    
+  cotacaoDolar &lt;- 3.35
+    
+  escreva("Digite um valor em reais: ")
+  leia(reais)
+    
+  dolares &lt;- reais * cotacaoDolar
+  escreval(reais, "reais equivalem a", dolares, "dolares")
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 03 - Calcular Juros Simples</h4>
+        <p>
+Escreva um programa que calcule o juros simples sobre um determinado valor. A fórmula para calcular simples simples é a seguinte:
+        </p>
+<pre class="box box-exercise">
+  J = C x I x N
+  
+  onde:
+    J = juros calculado
+    C = capital
+    I = taxa
+    N = período
+    
+    Obs.: Considerar taxa mensal e o período em meses.
+</pre>
+<pre>
+algoritmo "CalcularJurosSimples"
+var
+  capital: real
+  taxa: real
+  periodo: inteiro
+  juros: real
+inicio
+  escreval("Calcular Juros Simples")
+  escreval("")
+    
+  escreva("Digite o capital: ")
+  leia(capital)
+    
+  escreva("Digite a taxa de juros (mensal): ")
+  leia(taxa)
+    
+  escreva("Digite o período (em meses): ")
+  leia(periodo)
+    
+  juros &lt;- capital * (taxa/100) * periodo
+  escreval("O juros calculado foi de", juros)
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 04 - Calcular Preço Consumidor</h4>
+        <p>
+O preço consumidor de um carro novo é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que a porcentagem do distribuidor seja de 28% e os impostos sobre o custo de fábrica seja de 45%, crie um programa que leia o custo de fábrica de um determinado carro e depois mostre na tela o preço consumidor.
+        </p>
+<pre>
+algoritmo "CalcularPrecoConsumidor"
+var
+  porcentagemDistribuidor: real
+  impostos: real
+  custoFabrica: real
+  precoConsumidor: real
+inicio
+  escreval("Calcular preço consumidor")
+  escreval("")
+
+  porcentagemDistribuidor &lt;- 28/100
+  impostos &lt;- 45/100
+    
+  escreva("Informe o custo de fábrica: ")
+  leia(custoFabrica)
+    
+  precoConsumidor &lt;- custoFabrica + (custoFabrica * porcentagemDistribuidor)
+  precoConsumidor &lt;- precoConsumidor + (precoConsumidor * impostos)
+  escreval("O preço consumidor é de", precoConsumidor)
+fimalgoritmo
+</pre>
+
+
+        <h2>Estruturas de decisão</h2> 
+        <h4>Exercício 01 - Par ou Ímpar</h4>
+        <p>
+Escreva um programa que leia um número inteiro e depois mostre na tela se o número é par ou ímpar.
+        </p>
+<pre>
+algoritmo "ParOuImpar"
+var
+  numero: inteiro
+inicio
+  escreval("Verificar se um número é par ou ímpar")
+  escreval("")
+    
+  escreva("Digite um número inteiro maior que zero: ")
+  leia(numero)
+    
+  se (numero % 2 = 0) entao
+    escreval("O número é PAR")
+  senao
+    escreval("O número é ÍMPAR")
+  fimse
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 02 - Situação Escolar Aluno</h4>
+        <p>
+Escreva um programa que mostre a situação escolar de um determinado aluno. O programa deverá solicitar ao usuário quatro notas bimestrais e depois mostrar se o aluno foi aprovado, reprovado ou recuperação. Se média for igual ou maior do que 70.0, mostrar APROVADO. Se a média for igual ou maior do que 40.0, mostrar EM RECUPERAÇÃO. Caso seja menor do que 40.0, mostrar REPROVADO.
+        </p>
+<pre>
+algoritmo "SituacaoEscolarAluno"
+var
+  nota1, nota2, nota3, nota4: real
+  media: real
+inicio
+  escreval("Verificar a situção escolar de um aluno")
+  escreval("")
+    
+  escreva("Digite a nota do primeiro bimestre: ")
+  leia(nota1)
+
+  escreva("Digite a nota do segundo bimestre: ")
+  leia(nota2)
+
+  escreva("Digite a nota do terceiro bimestre: ")
+  leia(nota3)
+
+  escreva("Digite a nota do quarto bimestre: ")
+  leia(nota4)
+
+  media &lt;- (nota1+nota2+nota3+nota4) / 4
+    
+  se (media &gt;= 70.0) entao
+    escreval("O aluno esta aprovado")
+  senao
+    se (media &lt; 40.0) entao
+      escreval("O aluno esta reprovado")
+    senao
+      escreval("O aluno esta em recuperação")
+    finmse
+  fimse
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 03 - Dia da Semana por Extenso</h4>
+        <p>
+Escreva um programa que solicite um dia da semana (entre 1 a 7) e depois mostre o nome por extenso do dia informado. Caso o usuário informe um dia inválido, o programa deverá mostrar uma mensagem informando que o dia é inválido. Por exemplo, o usuário digitou o dia da semana 1, o programa deverá mostrar na tela 'Domingo'.
+        </p>
+<pre>
+algoritmo "DiaDaSemanaPorExtenso"
+var
+  diaSemana: inteiro
+inicio
+  escreval("Dia da semana por extenso")
+  escreval("")
+  
+  escreva("Digite o dia da semana (1-7): ")
+  leia(diaSemana)
+    
+  escolha (diaSemana)
+    caso 1
+      escreval("Domingo")
+    caso 2
+      escreval("Segunda-feira")
+    caso 3
+      escreval("Terça-feira")
+    caso 4
+      escreval("Quarta-feira")
+    caso 5
+      escreval("Quinta-feira")
+    caso 6
+      escreval("Sexta-feira")
+    caso 7
+      escreval("Sábado")
+    outrocaso
+      escreval("Dia da semana inválido")
+  fimescolha
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 04 - Menu Lanchonete</h4>
+        <p>
+Escreva um programa que permita o usuário escolher um produto de um menu de lanches de uma lanchonete. Após o usuário selecionar o item, o programa deve mostrar na tela qual foi o item selecionado pelo usuário. O menu de lanches que deve ser exibido pelo programa é o seguinte:
+        </p>
+        <ul class="list-unstyled">
+          <li>1 – X-Salada</li>
+          <li>2 – X-Bacon</li>
+          <li>3 – X-Egg</li>
+          <li>4 – Refrigerante</li>
+          <li>5 – Finalizar pedido</li>
+        </ul>
+<pre>
+algoritmo "MenuLanchonete"
+var
+  item: inteiro
+inicio
+  escreval("Menu lanchonete")
+  escreval("")
+    
+  escreval("1 – X-Salada")
+  escreval("2 – X-Bacon")
+  escreval("3 – X-Egg")
+  escreval("4 – Refrigerante")
+  escreval("5 – Finalizar pedido")
+    
+  escreva("Escolha um item do menu: ")
+  leia(item)
+    
+  escolha (item)
+    caso 1
+      escreval("Você escolheu X-Salada")
+    caso 2
+      escreval("Você escolheu X-Bacon")
+    caso 3
+      escreval("Você escolheu X-Egg")
+    caso 4
+      escreval("Você escolheu Refrigerante")
+    caso 5
+      escreval("Você escolheu finalizar pedido")
+    outrocaso
+      escreval("Item inexistente")
+  fimescolha
+fimalgoritmo
+</pre>
+
+
+        <h2>Estruturas de repetição</h2>
+        <h4>Exercício 01 - Números Divisíveis por 3</h4>
+        <p>
+Utilizando a estrutura de repetição PARA, escreva um programa que mostre na tela os números divisíveis por 3 que estão entre os números de 0 e 100.
+        </p>
+<pre>
+algoritmo "NumerosDivisiveisPorTres"
+var
+  numero: inteiro
+inicio
+  escreval("Números divisíveis por 3 entre 0 e 100")
+  escreval("")
+  
+  para numero de 0 ate 100 faca
+    se (numero % 3 = 0) entao
+      escreval(numero)
+    fimse
+  fimpara
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 02 - Tabuada de um número</h4>
+        <p>
+Utilizando a estrutura de repetição PARA, escreva um programa que solicite ao usuário um número inteiro e depois mostre na tela a tabuada do número informado no seguinte formato:
+        </p>
+<pre class="box box-exercise">
+  N x 1 = Y
+  N x 2 = Y
+  ...
+  N x 10 = Y
+  
+  onde:
+    N é o número informado pelo usuário
+    Y é o resultado da multiplicação 
+</pre>
+<pre>
+algoritmo "TabuadaDeUmNumero"
+var
+  numero: inteiro
+  i: inteiro
+inicio
+  escreval("Tabuada de um número")
+  escreval("")
+      
+  escreva("Digite um número inteiro entre 1 e 10: ")
+  leia(numero)
+    
+  para i de 1 ate 10 faca
+    escreval(numero, "x", i, "=", numero*i)
+  fimpara
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 03 - Números Ímpares</h4>
+        <p>
+Utilizando a estrutura de repetição ENQUANTO, escreva um programa que mostre na tela todos os números ímpares entre os números 0 e 100.
+        </p>
+<pre>
+algoritmo "NumerosImpares"
+var
+  numero: inteiro
+inicio
+  escreval("Números ímpares entre 0 e 100")
+  escreval("")
+    
+  numero &lt;- 0
+  enquanto (numero &lt;= 100) faca
+    se (numero % 2 &lt;&gt; 0) entao
+      escreval(numero)
+    fimse
+    numero &lt;- numero + 1
+  fimenquanto
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 04 - Média Aritmética</h4>
+        <p>
+Utilizando a estrutura de repetição ENQUANTO, escreva um programa que solicite ao usuário quatro números inteiros e depois mostre na tela a média aritmética dos números informados.
+        </p>
+<pre>
+algoritmo "MediaAritmetica"
+var
+  qtde: inteiro
+  nota: real
+  somaDasNotas: real
+  media: real
+inicio
+  escreval("Média Aritmética")
+  escreval("")
+   
+  qtde &lt;- 1
+  nota &lt;- 0.0
+  somaDasNotas &lt;- 0.0
+  enquanto (qtde &lt;= 4) faca
+    escreva("Digite a nota ", qtde, ": ")
+    leia(nota)
+    somaDasNotas &lt;- somaDasNotas + nota
+    qtde &lt;- qtde + 1
+  }
+    
+  media &lt;- somaDasNotas / 4
+  escreval("A média aritmética é: ", media)
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 05 - Tabuada</h4>
+        <p>
+Reescreva o programa Tabuada (que utiliza a estrutura PARA) utilizando a estrutura de repetição REPITA.
+        </p>
+<pre>
+algoritmo "TabuadaRepita"
+var
+  numero: inteiro
+  i: inteiro
+inicio
+  escreval("Tabuada de um número")
+  escreval("")
+      
+  escreva("Digite um número inteiro entre 1 e 10: ")
+  leia(numero)
+    
+  i &lt;- 1
+  repita
+    escreval(numero, "x", i, "=", numero*i)
+    i &lt;- i + 1
+  ate (i > 10)
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 06 - Menu Lanchonete</h4>
+        <p>
+Escreva um programa que permita o usuário escolher vários itens do menu de lanches de uma lanchonete. O menu que o programa deve exibir esta abaixo:
+        </p>
+        <ul class="list-unstyled">
+          <li>1 – X-Salada</li>
+          <li>2 – X-Bacon</li>
+          <li>3 – X-Egg</li>
+          <li>4 – Refrigerante</li>
+          <li>5 – Finalizar pedido</li>
+        </ul>
+        <p>
+        Observações:
+        </p>
+        <ul>
+          <li>O programa deve permitir que o usuário escolha mais de um produto.</li>
+          <li>A medida que o usuário vai escolhendo os itens, deve-se somar o valor dos itens escolhidos.</li>
+          <li>Quando o usuário escolher a opção 5 (Finalizar pedido), o programa deverá mostrar na tela o total dos itens escolhidos pelo usuário.</li>
+        </ul>
+<pre>
+algoritmo "MenuLanchonete"
+var
+  totalPedido: real
+  item: inteiro
+inicio
+  escreval("Menu lanchonete")
+  escreval()
+     
+  totalPedido &lt;- 0.0
+    
+  item &lt;- 0
+  repita 
+    escreval("1 – X-Salada (5,30)")
+    escreval("2 – X-Bacon (6,00)")
+    escreval("3 – X-Egg (6,70)")
+    escreval("4 – Refrigerante (3,2)")
+    escreval("5 – Finalizar pedido")
+    
+    escreva("Escolha um item do menu: ")
+    leia(item)
+    
+    escolha (item)
+      case 1
+        escreval("Você escolheu X-Salada")
+        totalPedido &lt;- totalPedido + 5.30
+      case 2
+        escreval("Você escolheu X-Bacon")
+        totalPedido &lt;- totalPedido + 6.00
+      case 3
+        escreval("Você escolheu X-Egg")
+        totalPedido &lt;- totalPedido + 6.70
+      case 4
+        escreval("Você escolheu Refrigerante")
+        totalPedido &lt;- totalPedido + 3.2
+      case 5
+      outrocaso
+        escreval("Item inexistente")
+    fimescolha
+  ate (item = 5)
+    
+  escreval("O total do seu pedido é: ", totalPedido)
+fimalgoritmo
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="bg-primary text-white mt-2 py-2 text-center">
+    &copy; CTS Educare&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://br.linkedin.com/in/erosvitor" target="_blank">Eros Vitor Bornatowski</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;erosborna@gmail.com
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>
