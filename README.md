@@ -1,7 +1,5 @@
-# Curso Lógica de Programação
-
-## Descrição
-Curso completo sobre os fundamentos da **lógica de programação**. Utilizando uma linguagem acessível, o curso contempla teoria, exemplos, exercícios e respostas.
+## Sobre
+O projeto é um curso sobre os fundamentos da **lógica de programação**. Utilizando uma linguagem acessível, o curso contempla teoria, exemplos, exercícios e respostas.
 
 A linguagem utilizada no curso é o Portugol, uma mistura do idioma Português com alguns termos da programação. Essa união recebe o nome de **pseudocódigo**. 
 
@@ -39,8 +37,3 @@ A seguir estão os procedimentos para montar a infraestrutura nos sistemas opera
 A figura abaixo é a tela inicial do AndroidVisual.
 
 ![](referencias/androidvisual-telainicial.png)
-
-## Histórico de lançamentos
-
-* 1.0.0 (2021-04-28)
-    * Primeira versão
