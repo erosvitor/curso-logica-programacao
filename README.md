@@ -1,7 +1,5 @@
 ## Sobre
-O projeto é um curso sobre os fundamentos da **lógica de programação**. Utilizando uma linguagem acessível, o curso contempla teoria, exemplos, exercícios e respostas.
-
-A linguagem utilizada no curso é o Portugol, uma mistura do idioma Português com alguns termos da programação. Essa união recebe o nome de **pseudocódigo**. 
+O projeto contém tópicos sobre os fundamentos da **lógica de programação**.
 
 ## Infraestrutura
 Para estudar lógica de programação é necessário ter um software que interprete e execute comandos do pseudocódigo. Um dos diversos softwares existentes para interpretação e execução de comandos do pseudocódigo é o **VisualG**. Este software é gratuito e é desenvolvido por uma empresa brasileira chamada **Apoio Informática**.
