@@ -1,0 +1,28 @@
+
+.box {
+  margin: 0 0px 30px 2px;
+  padding: 20px;
+  border-left: 5px solid #eee;
+}
+
+.box-sample {
+  border-color: #57b5e3;
+  background-color: #eee;
+}
+
+.box-sintax {
+  border-color: #ed4e2a;
+  background-color: #eee;
+}
+
+.box-exercise {
+  border-color: #eee;
+  background-color: #eee;
+}
+
+.box-linux-command {
+  margin: 0px 0px 30px 0px;
+  padding: 10px;
+  background-color: #eee;
+  color: #333;
+}

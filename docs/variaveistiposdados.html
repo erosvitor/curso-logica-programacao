@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Eros Vitor Bornatowski">
+
+  <title>CTS Educare - Curso Lógica de Programação</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/boxs.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Conteúdo</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">Introdução</a>
+        <a href="variaveistiposdados.html" class="list-group-item list-group-item-action bg-light">Variáveis e Tipos de dados</a>
+        <a href="operadoresexpressoes.html" class="list-group-item list-group-item-action bg-light">Operadores e Expressões</a>
+        <a href="saidadados.html" class="list-group-item list-group-item-action bg-light">Saída de dados</a>
+        <a href="entradadados.html" class="list-group-item list-group-item-action bg-light">Entrada de dados</a>
+        <a href="estruturasdecisao.html" class="list-group-item list-group-item-action bg-light">Estruturas de decisão</a>
+        <a href="estruturasrepeticao.html" class="list-group-item list-group-item-action bg-light">Estruturas de repetição</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Lógica de Programação</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recursos
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="exerciciossolucao.html">Solução Exercícios</a>
+                <a class="dropdown-item" href="infraestrutura.html">Infraestrutura</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Variáveis e Tipos de dados</h1>
+        <p>
+Todo algoritmo precisa de dados para efetuar o processamento para depois gerar a saída. Os dados precisam ser armazenados para depois serem processados. O local onde os dados são armazenados chama-se <b>variável</b>. Uma variável é um espaço na memória do computador reservado para armazenar um determinado dado.
+        </p>
+        <p>
+Todo dado possui um tipo. Os tipos atualmente utilizados no dia-a-dia são: textos, números e valores binários (sim/não, verdadeiro/falso, ligado/desligado).
+        </p>
+        <p>No pseudocódigo os tipos texto, número e valor binário são referenciados por meio dos seguintes termos:
+        </p>
+        <ul>
+          <li>dados textos -> caractere</li>
+          <li>dados numéricos -> inteiro e real</li>
+          <li>valores binários -> logico</li>
+        </ul>
+        <p>
+        Os dados numéricos podem ser divididos em números inteiros e números fracionários.
+        </p>
+        <ul>
+          <li>números inteiros -> inteiro</li>
+          <li>números fracionários -> real</li>
+        </ul>
+        <p>
+As variáveis no pseudocódigo são compostas pelo tipo do dado e por um identificador. A forma de utilização é mostrada abaixo.
+        </p>
+<pre class="box box-sintax">
+&lt;nome-variável&gt;: &lt;tipo-dado&gt;
+</pre>    
+        <p>
+O nome da variável é chamado de <b>identificador</b>. Para definir um identificador é necessário observar as seguintes regras:
+        </p>
+        <ul>
+          <li>O primeiro caractere deve ser uma letra, um sublinhado ou o caractere $.</li>
+          <li>Após o primeiro caractere pode ser utilizado uma sequencia de letras ou uma combinação de letras, números e sublinhados.</li>
+          <li>Não pode ser utilizado espaço em branco para separar nome composto.</li>
+          <li>Não pode ser utilizado caracteres acentuados e caracteres especiais, tais como parênteses, colchetes e chaves.</li>
+          <li>Não é permitido o uso de sinais de pontuação.</li>
+        </ul>
+        <p>
+Exemplos de identificadores válidos no pseudocódigo:
+        </p>
+        <ul>
+          <li>delta, X, BC4R, K7, notas, media, ABC, PI, ICMS</li>
+        </ul>
+        <p>
+Exemplos de identificadores inválidos no pseudocódigo:
+        </p>
+        <ul>
+          <li>5X, E(13), A:B, X-Y, Nota/2, AWq*, P&AA</li>
+        </ul>
+        <p>
+Exemplo de utilização de variáveis no pseudocódigo:
+        </p>
+<pre class="box box-sample">
+algoritmo "VariaveisTiposDados"
+var
+  variavelInteiro: inteiro
+  variavelReal: real
+  variavelCaracter: caracter
+  variavelLogico: logico
+inicio
+  variavelInteiro &lt;- 127
+  variavelReal &lt;- 3.1415
+  variavelCaracter &lt;- "Pseudocódigo"
+  variavelLogico &lt;- VERDADEIRO
+fimalgoritmo
+</pre>
+
+        <h2>Exercícios</h2>
+        <h4>Exercício 01</h4>
+        <p>
+Sobre variáveis e tipos de dados no pseudocódigo, marque com V as sentenças verdadeiras e com F as sentenças falsas.
+        </p>
+        <ul class="list-unstyled">
+          <li>(&nbsp;&nbsp;&nbsp;) Um identificador de variável pode começar pelo caractere $</li> 
+          <li>(&nbsp;&nbsp;&nbsp;) É possível misturar letras e números após o primeiro caractere válido</li>
+          <li>(&nbsp;&nbsp;&nbsp;) O caractere underline pode ser utilizado para iniciar um nome de variável</li>
+          <li>(&nbsp;&nbsp;&nbsp;) O pseudocódigo não faz diferença entre letras maiúsculas e letras minúsculas</li>
+          <li>(&nbsp;&nbsp;&nbsp;) É possível utilizar espaço em branco para separar um identificador composto</li>
+        </ul>
+ 
+        <h4>Exercício 02</h4>
+        <p>
+Marque com V os identificadores válidos e com I os identificadores inválidos.
+        </p>
+        <div class="container" style="padding-left: 0px">
+          <div class="row">
+            <div class="col-sm">
+              <ul class="list-unstyled">
+                <li>(&nbsp;&nbsp;&nbsp;) abc</li>
+                <li>(&nbsp;&nbsp;&nbsp;) 123a</li>
+                <li>(&nbsp;&nbsp;&nbsp;) _</li>
+                <li>(&nbsp;&nbsp;&nbsp;) Al23</li>
+                <li>(&nbsp;&nbsp;&nbsp;) $var</li>
+                <li>(&nbsp;&nbsp;&nbsp;) AB.DE</li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <ul class="list-unstyled">
+                <li>(&nbsp;&nbsp;&nbsp;) 3abc</li>
+                <li>(&nbsp;&nbsp;&nbsp;) a?B</li>
+                <li>(&nbsp;&nbsp;&nbsp;) A_a</li>
+                <li>(&nbsp;&nbsp;&nbsp;) _1</li>
+                <li>(&nbsp;&nbsp;&nbsp;) _$</li>
+                <li>(&nbsp;&nbsp;&nbsp;) etc...</li>
+              </ul>
+            </div>
+            <div class="col-sm">
+             <ul class="list-unstyled">
+                <li>(&nbsp;&nbsp;&nbsp;) a</li>
+                <li>(&nbsp;&nbsp;&nbsp;) acdl</li>
+                <li>(&nbsp;&nbsp;&nbsp;) 1</li>
+                <li>(&nbsp;&nbsp;&nbsp;) A_$_</li>
+                <li>(&nbsp;&nbsp;&nbsp;) b3l2</li>
+                <li>(&nbsp;&nbsp;&nbsp;) guarda-chuva</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h4>Exercício 03</h4>
+        <p>
+Com suas palavras, descreva o que é uma variável?
+        </p>
+        <hr class="mb-0" style="border-color: #212529"/>
+        <div class="mb-4"></div>
+
+        <h4>Exercício 04</h4>
+        <p>
+Quais os tipos de dados existentes no pseudocódigo?
+        </p>
+        <hr class="mb-0" style="border-color: #212529"/>
+        <div class="mb-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="bg-primary text-white mt-2 py-2 text-center">
+    &copy; CTS Educare&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://br.linkedin.com/in/erosvitor" target="_blank">Eros Vitor Bornatowski</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;erosborna@gmail.com
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

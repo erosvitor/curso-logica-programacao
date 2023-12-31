@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Eros Vitor Bornatowski">
+
+  <title>CTS Educare - Curso Lógica de Programação</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Conteúdo</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">Introdução</a>
+        <a href="variaveistiposdados.html" class="list-group-item list-group-item-action bg-light">Variáveis e Tipos de dados</a>
+        <a href="operadoresexpressoes.html" class="list-group-item list-group-item-action bg-light">Operadores e Expressões</a>
+        <a href="saidadados.html" class="list-group-item list-group-item-action bg-light">Saída de dados</a>
+        <a href="entradadados.html" class="list-group-item list-group-item-action bg-light">Entrada de dados</a>
+        <a href="estruturasdecisao.html" class="list-group-item list-group-item-action bg-light">Estruturas de decisão</a>
+        <a href="estruturasrepeticao.html" class="list-group-item list-group-item-action bg-light">Estruturas de repetição</a>
+      </div>
+    </div> 
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Lógica de Programação</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recursos
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="exerciciossolucao.html">Solução Exercícios</a>
+                <a class="dropdown-item" href="infraestrutura.html">Infraestrutura</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Introdução</h1>
+        <p>
+A lógica de programação é uma disciplina que apresenta elementos e recursos necessários para a construção do conhecimento utilizado na criação de programas de computador. Os elementos e recursos básicos da lógica de programação são:
+        </p>
+        <ul>
+          <li>Armazenamento de dados</li>
+          <li>Expressões aritméticas e lógicas</li>
+          <li>Processamento de dados</li>
+          <li>Exibição de dados</li>
+          <li>Recebimento de dados</li>
+          <li>Tomada de decisão</li>
+          <li>Repetição de tarefas</li>
+        </ul>
+    
+        <h2>Programa de Computador</h2>
+        <p>
+Um programa de computador é uma sequência de passos ordenados logicamente para que uma determinada tarefa seja executada pelo computador. Exemplos de programas de computador:
+        </p>
+        <ul>
+          <li>Editores de Texto</li>
+          <li>Planinhas Eletrônicas</li>
+          <li>Simuladores de vôo</li>
+          <li>Players de vídeo</li>  
+        </ul>
+        <p>
+Um outro nome dado ao programa de computador é algoritmo. Normalmente um programa de computador é formado por vários algoritmos, que juntos possibilitam a execução de uma determinada tarefa.
+        </p>
+
+        <h2>Estrutura de um algoritmo</h2>
+        <p>
+Todo algoritmo possui uma estrutura composta por três elementos: entrada de dados, processamento e saída de dados. A figura abaixo ilustra como os elementos de um algoritmo estão organizados.
+        </p>
+        <img class="img-fluid d-block mx-auto mb-3" src="imagens/algoritmo-estrutura.png" alt="Estrutura de um algoritmo" />
+
+        <h2>Representação de um algoritmo</h2>
+        <p>
+Um algoritmo pode ser representado de três formas diferentes. A primeira é através de uma descrição narrativa, a segunda forma é utilizando fluxograma e a terceira forma é através do uso de pseudocódigo.
+        </p>
+    
+        <h3>Descrição Narrativa</h3>
+        <p>
+Na descrição narrativa é utilizado o idioma natural, por exemplo o Português. Esta representação é muito utilizada em esboços iniciais de um algoritmo. É fácil de utilizar, é simples, mas tem o problema da ambiguidade. O exemplo abaixo mostra a utilização da descrição narrativa para criar um algoritmo que verifica se um determinado número é par ou ímpar.
+        </p>
+        <img class="img-fluid d-block mx-auto mb-3" src="imagens/algoritmo-descricaonarrativa.png" alt="Descrição narrativa de um algoritmo" />
+    
+        <h3>Fluxograma</h3>
+        <p>
+No fluxograma é utilizado um conjunto de elementos gráficos para representar o algoritmo. Os elementos gráficos são: elipses, retângulos, losangos e linhas com setas em uma das extremidades. O exemplo abaixo mostra um algoritmo representado por fluxograma.
+        </p>
+        <img class="img-fluid d-block mx-auto mb-3" src="imagens/algoritmo-fluxograma.png" alt="Fluxograma de um algoritmo" />
+
+        <h3>Pseudocódigo</h3>
+        <p>
+O pseudocódigo é a forma de representação que mais se aproxima de uma linguagem de programação. O exemplo abaixo mostra a utilização do pseudocódigo.
+        </p>
+        <img class="img-fluid d-block mx-auto mb-3" src="imagens/algoritmo-pseudocodigo.png" alt="Pseudocodigo de um algoritmo" />
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="bg-primary text-white mt-2 py-2 text-center">
+    &copy; CTS Educare&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://br.linkedin.com/in/erosvitor" target="_blank">Eros Vitor Bornatowski</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;erosborna@gmail.com
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

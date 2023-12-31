@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Eros Vitor Bornatowski">
+
+  <title>CTS Educare - Curso Lógica de Programação</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/boxs.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Conteúdo</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">Introdução</a>
+        <a href="variaveistiposdados.html" class="list-group-item list-group-item-action bg-light">Variáveis e Tipos de dados</a>
+        <a href="operadoresexpressoes.html" class="list-group-item list-group-item-action bg-light">Operadores e Expressões</a>
+        <a href="saidadados.html" class="list-group-item list-group-item-action bg-light">Saída de dados</a>
+        <a href="entradadados.html" class="list-group-item list-group-item-action bg-light">Entrada de dados</a>
+        <a href="estruturasdecisao.html" class="list-group-item list-group-item-action bg-light">Estruturas de decisão</a>
+        <a href="estruturasrepeticao.html" class="list-group-item list-group-item-action bg-light">Estruturas de repetição</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Lógica de Programação</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recursos
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="exerciciossolucao.html">Solução Exercícios</a>
+                <a class="dropdown-item" href="infraestrutura.html">Infraestrutura</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Operadores e Expressões</h1>
+        <p>
+Um operador é um símbolo gráfico utilizado na construção de expressões aritméticas. As expressões aritméticas que podem ser construídas utilizando-se operadores são: adição, substração, divisão e multiplicação.
+        </p>
+        <p>
+Os operadores disponíveis no pseudocódigo são:
+        </p>
+        <ul>
+          <li>Atribuição</li>
+          <li>Aritméticos</li>
+          <li>Unários</li>
+        </ul>
+
+        <h2>Operador de atribuição</h2>
+        <p>
+O operador de atribuição é utilizado para atribuir um determinado dado a uma variável. O operador de atribuição no pseudocódigo é o símbolo <b>&lt;-</b>
+        </p>
+
+        <h2>Operadores aritméticos</h2>
+        <p>
+Os operadores aritméticos são utilizados na construção de expressões aritméticas, tais como a adição, subtração, divisão e multiplicação. Os operadores aritméticos disponíveis no pseudocódigo são os seguintes: <b>+</b>, <b>-</b>, <b>*</b>, <b>/</b> e <b>%</b>. Os operadores <b>/</b> e <b>%</b> são utilizados na divisão de dois números, a diferença é que o operador <b>%</b> retorna o resto da divisão enquanto o operador <b>/</b> retorna o resultado da divisão.
+        </p>
+
+        <h2>Operadores unários</h2>
+        <p>
+Os operadores unários são utilizados para definir se um número é positivo ou negativo. Os operadores unários no pseudocódigo são os seguintes: <b>-</b> e <b>+</b>. O operador <b>+</b> não precisa ser utilizado porque todo número sem operador unário é por padrão positivo.
+        </p>
+        <p>
+Exemplo de utilização dos operadores no pseudocódigo:
+        </p>
+<pre class="box box-sample">
+algoritmo "OperadoresExpressoes"
+var
+  n1: inteiro
+  n2: inteiro
+  adicao: inteiro
+  substracao: inteiro
+  multiplicacao: inteiro
+  divisao: real
+  resto: inteiro
+inicio
+  n1 &lt;- 20
+  n2 &lt;- 10
+
+  adicao &lt;- n1 + n2
+  subtracao &lt;- n1 - n2
+  multiplicacao &lt;- n1 * n2
+  divisao &lt;- n1 / n2
+  resto &lt;- n1 % n2
+fimalgoritmo
+</pre>
+
+        <h2>Exercícios</h2>
+        <h4>Exercício 01</h4>
+        <p>
+Qual o valor atribuído a variável 'c'?
+        </p>
+<pre class="box box-exercise ">
+var
+  a,b,c: inteiro
+inicio
+  a &lt;- 20
+  b &lt;- 10
+  c &lt;- (a - b) * (a)
+fimalgoritmo
+</pre>
+
+        <h4>Exercício 02</h4>
+        <p>
+No fragmento de código abaixo, qual o resultado da expressão aritmética?
+        </p>
+<pre class="box box-exercise ">
+var
+  i,j,k: inteiro
+inicio
+  i &lt;- 15
+  j &lt;- 3
+  k &lt;- i * j + (i / 3)
+fimalgoritmo
+</pre>
+      </div>
+   
+    </div>
+  </div>
+
+  <div id="footer" class="bg-primary text-white mt-2 py-2 text-center">
+    &copy; CTS Educare&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://br.linkedin.com/in/erosvitor" target="_blank">Eros Vitor Bornatowski</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;erosborna@gmail.com
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>
